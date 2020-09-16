@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">News app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Test Data here-->
+    <string name="news_title">Bitcoin Price Analycyc: BTC/USD bears regain control, price moves towards $11,400</string>
+    <string name="news_desc">Bitcoin (BTC) dropped like a stone after a failed attempt to clear the local resistance created by 1-hour SMA100 at $11,650. At the time of writing, B</string>
+    <string name="news_content">Note: All information on this page is subject to change. The use of this website constitutes acceptance of our user agreement. Please read our privacy policy and legal disclaimer.\r\nTrading foreign ex… [+1338 chars]</string>
+    <string name="news_published_at">2020-08-25T12:34:36Z</string>
+    <string name="news_source_name">FXStreet</string>
+    <string name="news_auther">Tanya Abrosimova</string>
+    <string name="swipe_to_read_more">Swipe to read more</string>
+    <string name="full_story">Full Story</string>
+    <string name="trending">Trending</string>
+    <string name="browse">Browse</string>
+    <string name="search_news">search news</string>
+    <string name="search">search</string>
+    <string name="choose_category">Choose Category</string>
+
+
+
+    <!-- Chip Categories 10 as of now -->
+    <string name="cat_coronavirus">Coronavirus</string>
+    <string name="cat_technology">Technology</string>
+    <string name="cat_india">India</string>
+    <string name="cat_business">Business</string>
+    <string name="cat_politics">Politics</string>
+    <string name="cat_sport">Sports</string>
+    <string name="cat_startups">Startup</string>
+    <string name="cat_entertainment">Entertainment</string>
+    <string name="cat_international">International</string>
+    <string name="cat_education">Education</string>
+    <string name="all">All</string>
+</resources>

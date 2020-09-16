@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/itemArticleImageViewS"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="37dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="12dp"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            app:srcCompat="@drawable/bg_placeholder"
+            tools:ignore="ContentDescription" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/itemNewsSourceTVS"
+                    android:text="@string/news_source_name"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@id/itemArticleImageViewS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/itemArticleTitleTVS"
+                   android:layout_marginLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_toRightOf="@id/itemArticleImageViewS"
+                    android:text="@string/news_title"
+                    android:textColor="#000"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:maxLines="3"
+                    android:layout_below="@id/itemNewsSourceTVS"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

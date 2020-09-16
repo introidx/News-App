@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/categoryBottomSheet"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    android:layout_height="wrap_content"
+    app:behavior_peekHeight="0dp"
+    app:behavior_skipCollapsed="true"
+    android:background="@drawable/bootom_sheet_bg">
+
+    <TextView
+        android:id="@+id/bottomSheetTextView"
+        android:text="@string/choose_category"
+        android:layout_margin="15dp"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/closeBottomSheetIV"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/close_bg"
+        android:elevation="3dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_close_24"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        app:singleSelection="true"
+        android:layout_below="@id/bottomSheetTextView"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catAll"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="true"
+            android:text="@string/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catCoronavirus"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_coronavirus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catBusiness"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catEducation"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catTechnology"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_technology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catIndia"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_india"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catPolitics"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_politics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catSports"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catStartup"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_startups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catEntertainment"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_entertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/catInternational"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:checked="false"
+            android:text="@string/cat_international"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+</RelativeLayout>
