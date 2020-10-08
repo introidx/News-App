@@ -43,14 +43,14 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
         }
 
         viewModel.breakingNews.observe(viewLifecycleOwner, Observer { response ->
-            when(response) {
+            when (response) {
                 is Success -> {
                     hideProgressBar()
                     response.data?.let { newsResponse ->
                         newsAdapter.differ.submitList(newsResponse.articles.toList())
                         val totalPages = newsResponse.totalResults / QUERY_PAGE_SIZE + 2
                         isLastPage = viewModel.breakingNewsPage == totalPages
-                        if (isLastPage){
+                        if (isLastPage) {
                             rvBreakingNews.setPadding(0, 0, 0, 0)
                         }
                     }
@@ -59,7 +59,8 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
                     hideProgressBar()
                     response.message?.let { message ->
                         Log.e(TAG, "An error occured: $message")
-                        Toast.makeText(activity, "An Error occured: $message",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(activity, "An Error occured: $message", Toast.LENGTH_SHORT)
+                            .show()
                     }
                 }
                 is Loading -> {
@@ -86,7 +87,7 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
     val scrollListener = object : RecyclerView.OnScrollListener() {
         override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
             super.onScrollStateChanged(recyclerView, newState)
-            if(newState == AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
+            if (newState == AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
                 isScrolling = true
             }
         }
@@ -105,13 +106,11 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
             val isTotalMoreThanVisible = totalItemCount >= QUERY_PAGE_SIZE
             val shouldPaginate = isNotLoadingAndNotLastPage && isAtLastItem && isNotAtBeginning &&
                     isTotalMoreThanVisible && isScrolling
-            if(shouldPaginate) {
+            if (shouldPaginate) {
                 viewModel.getBreakingNews("us")
                 isScrolling = false
             }
         }
-
-
     }
 
     private fun setupRecyclerView() {
