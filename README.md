@@ -21,10 +21,6 @@ App build using Retrofit, Room DB , and MVVM which uses api from [www.newsapi.or
   - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - Data objects that notify views when the underlying database changes.
   - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes. 
   - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
-- [Backend](https://firebase.google.com) - Google Firebase
-  - Firebase Auth - To support email based authentication
-  - Firebase Firestore - A NoSQL database to store all data 
-  - Firebase Storage - A cloud storage to store all images
 - [Glide](https://github.com/bumptech/glide) - An image loading library for Android backed by Kotlin Coroutines.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
 
